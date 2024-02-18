@@ -10,3 +10,10 @@ docker-compose up --build -d
 
 docker-compose down
  
+git pull origin main
+
+git push -u origin main
+
+git add --all
+
+git commit --all
