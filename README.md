@@ -22,3 +22,13 @@ git push -u origin main
 postgres/qwerty
 
 phpandrei
+
+akozlov@akozlov:~/projects/gofirst$ docker-compose exec golang_first go mod init gofirst
+go: creating new go.mod: module gofirst
+go: to add module requirements and sums:
+        go mod tidy
+
+akozlov@akozlov:~/projects/gofirst$ docker-compose exec golang_first go get 'github.com/lib/pq'
+go: downloading github.com/lib/pq v1.10.9
+go: added github.com/lib/pq v1.10.9
+akozlov@akozlov:~/projects/gofirst$ 
