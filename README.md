@@ -12,8 +12,11 @@ docker-compose down
  
 git pull origin main
 
-git push -u origin main
-
 git add --all
 
 git commit --all
+
+git push -u origin main
+
+phpandrei
+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

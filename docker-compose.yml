@@ -12,7 +12,21 @@ services:
     tty: true        # docker run -t
     volumes:
       - ./src:/go/tmp/src
+    depends_on:
+      - golang_postgres
+    environment:
+      - DB_PASSWORD=qwerty
+
+  golang_postgres:
+    restart: always
+    image: postgres:latest
+    volumes:
+    - ./database/postgres/data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=qwerty
+    ports:
+      - 5436:5432
 
 # docker-compose exec golang_first gofmt hello.go
 # docker-compose exec golang_first go run hello.go
-# docker-compose exec golang_first go run commands/runserver.go
+# docker-compose exec golang_first go run commands/runserver.go postgres
