@@ -18,4 +18,7 @@ git commit --all
 
 git push -u origin main
 
+БД
+postgres/qwerty
+
 phpandrei
