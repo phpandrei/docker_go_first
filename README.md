@@ -1,6 +1,6 @@
 # docker_go_first
 
-docker-compose exec golang_first go run server.go - запуск сервера. Работает в браузере http://127.0.0.1:8050/test
+docker-compose exec golang_first go run server.go - запуск сервера. Работает в браузере http://127.0.0.1:8050/test?abc=444444&cde=5555
 
 docker-compose exec golang_first go run hello.go - в консоле
 
@@ -19,4 +19,3 @@ git commit --all
 git push -u origin main
 
 phpandrei
-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
