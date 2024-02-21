@@ -4,8 +4,7 @@ import (
   "database/sql"
   "fmt"
   "log"
-  
-  _ "github.com/lib/pq"
+  "github.com/lib/pq"
   "github.com/jmoiron/sqlx"
 )
 

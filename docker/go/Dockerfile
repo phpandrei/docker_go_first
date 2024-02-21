@@ -2,6 +2,7 @@
 FROM golang:latest
 # Папка приложения
 ARG APP_DIR=app
+ENV CGO_ENABLED=0
 # Копирование файлов
 COPY . /go/tmp/src/${APP_NAME}
 # Рабочая директория

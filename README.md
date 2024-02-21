@@ -4,7 +4,11 @@ docker-compose exec golang_first go run server.go - запуск сервера.
 
 docker-compose exec golang_first go run hello.go - в консоле
 
-docker-compose exec golang_first gofmt hello.go - потраха файла
+docker-compose exec golang_first go build hello.go - скомпилировать
+
+docker-compose exec golang_first gofmt hello.go - потроха файла
+
+docker-compose exec golang_first go run dbexample1.go - бд
 
 docker-compose up --build -d
 
@@ -23,6 +27,10 @@ postgres/qwerty
 
 phpandrei
 
+## запуск тестов
+docker-compose exec golang_first go test gofirst/tests
+
+## Инииализация модуля/проекта
 akozlov@akozlov:~/projects/gofirst$ docker-compose exec golang_first go mod init gofirst
 go: creating new go.mod: module gofirst
 go: to add module requirements and sums:
