@@ -25,5 +25,5 @@ func main() {
 func mysetter(msgCh chan string, str string) {    
     //time.Sleep(3000 * time.Millisecond)
     msgCh <- str
-    time.Sleep(3000 * time.Millisecond) //этот слип нам пофиг, так как в канал записали. То есть дождались
+    time.Sleep(3000 * time.Millisecond) //этот слип нам пофиг, так как в канал записали. То есть
 }

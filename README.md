@@ -30,6 +30,12 @@ phpandrei
 ## запуск тестов
 docker-compose exec golang_first go test gofirst/tests
 
+## горутина 
+живет пока жива программа. Можно заставить программу ждать горутину
+
+## канал
+всегда ждем пока не прочтем с канала. Типа воркера либо параллельной обработки
+
 ## Инииализация модуля/проекта
 akozlov@akozlov:~/projects/gofirst$ docker-compose exec golang_first go mod init gofirst
 go: creating new go.mod: module gofirst
