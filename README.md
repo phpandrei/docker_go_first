@@ -36,6 +36,11 @@ docker-compose exec golang_first go test gofirst/tests
 ## канал
 всегда ждем пока не прочтем с канала. Типа воркера либо параллельной обработки
 
+## контекст
+можем передать что бы отрубить горутину. - пример 2
+Можем передать значение - пример 3
+Передаем время на выполнение  (например не долше 10 сек) - пример 1
+
 ## Инииализация модуля/проекта
 akozlov@akozlov:~/projects/gofirst$ docker-compose exec golang_first go mod init gofirst
 go: creating new go.mod: module gofirst
